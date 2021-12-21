@@ -42,18 +42,6 @@ His research is mainly focus on Software Engineering and Automated Testing.
 - 2021Fall: Maintenance of [JAnswer System](http://sustechcs102a.xyz/)
 - 2022Spring: Student Assistance of CS102A(Introduction of Java Programming)
 
-## Project Experience
-### 2019 Fall
-- CS102A: Chinese chess by Java swing
-
-### 2020 Fall
-- CS207: Automated Seller by Verilog
-- CS205: CNN implemented by C/C++
-
-### 2021 Spring
-- CS307: Teaching Instruction System Backend Design by PostgreSQL
-- CS202: CPU implemented by Verilog
-
 ## Awards
 - 2019 SUSTech Freshman Scholarship(Second Prize)
 - 2019 SUSTech Student Scholarship(First Prize)
