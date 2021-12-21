@@ -1,110 +1,116 @@
-# Funday -- 个人简历模板
+# The Minimal theme
 
-<a href='http://gitee.com/xiaodan_yu/resume.io/stargazers'><img src='http://gitee.com/xiaodan_yu/resume.io/badge/star.svg?theme=dark' alt='star'></img></a>
-<a href='http://gitee.com/xiaodan_yu/resume.io/members'><img src='http://gitee.com/xiaodan_yu/resume.io/badge/fork.svg?theme=dark' alt='fork'></img></a>
+[![.github/workflows/ci.yaml](https://github.com/pages-themes/minimal/actions/workflows/ci.yaml/badge.svg)](https://github.com/pages-themes/minimal/actions/workflows/ci.yaml) [![Gem Version](https://badge.fury.io/rb/jekyll-theme-minimal.svg)](https://badge.fury.io/rb/jekyll-theme-minimal)
 
-## 名字释义
+*Minimal is a Jekyll theme for GitHub Pages. You can [preview the theme to see what it looks like](http://pages-themes.github.io/minimal), or even [use it today](#usage).*
 
-<strong>Funday</strong>，是星期八，开心Day的意思。以前很多玩笑都是说要等星期八才能实现，OK，Then it happened now!
+![Thumbnail of Minimal](thumbnail.png)
 
-希望每个人在使用了Funday之后在找工作的时候都是处在星期八，开开心心，快快乐乐，轻轻松松拿到心仪的多金的Offer！
+## Usage
 
-## 使用方法
+To use the Minimal theme:
 
-1. 修改`_config.yml`文件中的内容
+1. Add the following to your site's `_config.yml`:
 
-```
-# 个人名称或昵称
-name: xiaoxiao
-# 页面个人头像信息中地址展示信息
-location: 大连
-# 页面个人头像信息中公司展示信息
-company: IBM
-# 页面个人头像信息中职位展示信息
-position: Java开发工程师
-# 页面个人头像信息中GITHUB展示信息
-github: https://github.com/XXXX
-# 页面个人头像信息中Facebook展示信息
-facebook: https://www.facebook.com/XXXX
-# 页面个人头像信息中电话展示信息
-phone: 1580424XXXX
-# 页面个人头像信息中EMAIL展示信息
-email: xxxx@xxx.com
+    ```yml
+    remote_theme: pages-themes/minimal@v0.2.0
+    plugins:
+    - jekyll-remote-theme # add this line to the plugins list if you already have one
+    ```
 
-#本项目的baseurl
-baseurl: "/resume.io"
-```
+2. Optionally, if you'd like to preview your site on your computer, add the following to your site's `Gemfile`:
 
-2. 修改个人头像信息
+    ```ruby
+    gem "github-pages", group: :jekyll_plugins
+    ```
 
-	修改 `_config.yml` 文件中内容
+## Customizing
 
-3. 修改基本信息
- 
-	修改 `_includes/resumer_01-basic.html` 文件中内容
+### Configuration variables
 
-4. 修改职业技能
+Minimal will respect the following variables, if set in your site's `_config.yml`:
 
-    修改 `_includes/resumer_02-profetional.html` 文件中内容
-
-5. 修改教育经历
-
-    修改 `_includes/resumer_03-education.html` 文件中内容
-
-6. 修改工作经历
-
-    修改 `_includes/resumer_04-experience.html` 文件中内容
-
-7. 修改获得证书
-
-	修改 `_includes/resumer_05-certification.html` 文件中内容
-
-8. 修改个人作品
-
-	修改 `_includes/resumer_06-personal_project.html` 文件中内容
-
-
-## 本地搭建
-
-在本地安装[Jekyll](https://jekyllrb.com/).
-然后在项目目录执行`jekyll s`命令,如下
-
-```bash
-[root@localhost ~]# jekyll s
-Configuration file: C:/..../resume.io/_config.yml
-            Source: C:/..../resume.io
-       Destination: C:/..../resume.io/_site
- Incremental build: disabled. Enable with --incremental
-      Generating...
-                    done in 0.371 seconds.
-  Please add the following to your Gemfile to avoid polling for changes:
-    gem 'wdm', '>= 0.1.0' if Gem.win_platform?
- Auto-regeneration: enabled for 'C:/..../resume.io'
-    Server address: http://127.0.0.1:4000/resume.io/
-  Server running... press ctrl-c to stop.
+```yml
+title: [The title of your site]
+description: [A short description of your site's purpose]
 ```
 
-然后可以访问[http://127.0.0.1:4000/resume.io/](http://127.0.0.1:4000/resume.io/)来访问本地的服务了。
+Additionally, you may choose to set the following optional variables:
 
+```yml
+show_downloads: ["true" or "false" (unquoted) to indicate whether to provide a download URL]
+google_analytics: [Your Google Analytics tracking ID]
+```
 
-## 在线预览
+### Stylesheet
 
-[非你莫属--个人简历模板](http://xiaodan_yu.gitee.io/resume.io)
+If you'd like to add your own custom styles:
 
-## 截图预览
+1. Create a file called `/assets/css/style.scss` in your site
+2. Add the following content to the top of the file, exactly as shown:
+    ```scss
+    ---
+    ---
 
-![01.png](http://xiaodan_yu.gitee.io/resume.io/snapshot/11_01.png)
+    @import "{{ site.theme }}";
+    ```
+3. Add any custom CSS (or Sass, including imports) you'd like immediately after the `@import` line
 
-![02.png](http://xiaodan_yu.gitee.io/resume.io/snapshot/11_02.png)
+*Note: If you'd like to change the theme's Sass variables, you must set new values before the `@import` line in your stylesheet.*
 
-![03.png](http://xiaodan_yu.gitee.io/resume.io/snapshot/11_03.png)
+### Layouts
 
-![04.png](http://xiaodan_yu.gitee.io/resume.io/snapshot/11_04.png)
+If you'd like to change the theme's HTML layout:
 
+1. For some changes such as a custom `favicon`, you can add custom files in your local `_includes` folder. The files [provided with the theme](https://github.com/pages-themes/minimal/tree/master/_includes) provide a starting point and are included by the [original layout template](https://github.com/pages-themes/minimal/blob/master/_layouts/default.html).
+2. For more extensive changes, [copy the original template](https://github.com/pages-themes/minimal/blob/master/_layouts/default.html) from the theme's repository<br />(*Pro-tip: click "raw" to make copying easier*)
+3. Create a file called `/_layouts/default.html` in your site
+4. Paste the default layout content copied in the first step
+5. Customize the layout as you'd like
 
-## 参考
+### Customizing Google Analytics code
 
-本简历模板基于[Certy](http://sc.chinaz.com/moban/170307198220.htm)修改而来。保留了所有的样式，基于Jekyll重构了页面框架，并去掉了一些没有必要的内容，整合一页简历。
+Google has released several iterations to their Google Analytics code over the years since this theme was first created. If you would like to take advantage of the latest code, paste it into `_includes/head-custom-google-analytics.html` in your Jekyll site.
 
-## 开源协议
-[MIT](https://gitee.com/xiaodan_yu/resume.io/blob/master/LICENSE)
+### Overriding GitHub-generated URLs
+
+Templates often rely on URLs supplied by GitHub such as links to your repository or links to download your project. If you'd like to override one or more default URLs:
+
+1. Look at [the template source](https://github.com/pages-themes/minimal/blob/master/_layouts/default.html) to determine the name of the variable. It will be in the form of `{{ site.github.zip_url }}`.
+2. Specify the URL that you'd like the template to use in your site's `_config.yml`. For example, if the variable was `site.github.url`, you'd add the following:
+    ```yml
+    github:
+      zip_url: http://example.com/download.zip
+      another_url: another value
+    ```
+3. When your site is built, Jekyll will use the URL you specified, rather than the default one provided by GitHub.
+
+*Note: You must remove the `site.` prefix, and each variable name (after the `github.`) should be indent with two space below `github:`.*
+
+For more information, see [the Jekyll variables documentation](https://jekyllrb.com/docs/variables/).
+
+## Roadmap
+
+See the [open issues](https://github.com/pages-themes/minimal/issues) for a list of proposed features (and known issues).
+
+## Project philosophy
+
+The Minimal theme is intended to make it quick and easy for GitHub Pages users to create their first (or 100th) website. The theme should meet the vast majority of users' needs out of the box, erring on the side of simplicity rather than flexibility, and provide users the opportunity to opt-in to additional complexity if they have specific needs or wish to further customize their experience (such as adding custom CSS or modifying the default layout). It should also look great, but that goes without saying.
+
+## Contributing
+
+Interested in contributing to Minimal? We'd love your help. Minimal is an open source project, built one contribution at a time by users like you. See [the CONTRIBUTING file](docs/CONTRIBUTING.md) for instructions on how to contribute.
+
+### Previewing the theme locally
+
+If you'd like to preview the theme locally (for example, in the process of proposing a change):
+
+1. Clone down the theme's repository (`git clone https://github.com/pages-themes/minimal`)
+2. `cd` into the theme's directory
+3. Run `script/bootstrap` to install the necessary dependencies
+4. Run `bundle exec jekyll serve` to start the preview server
+5. Visit [`localhost:4000`](http://localhost:4000) in your browser to preview the theme
+
+### Running tests
+
+The theme contains a minimal test suite, to ensure a site with the theme would build successfully. To run the tests, simply run `script/cibuild`. You'll need to run `script/bootstrap` once before the test script will work.
