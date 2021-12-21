@@ -1,4 +1,4 @@
-# Hi, are you coding?
+# Hello, I'm YeeTone WANG, a software code farmer
 
 YeeTone Wang is an undergraduate student at the Department of [CSE](http://cse.sustech.edu.cn/) in [SUSTech](https://sustech.edu.cn/en/), 
 whose supervisor is [Prof. Yepang LIU](https://yepangliu.github.io/).
