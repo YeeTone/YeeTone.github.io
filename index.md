@@ -1,6 +1,6 @@
 # Hi, are you coding?
 
-Yeetone Wang is an undergraduate student at the Department of [CSE](http://cse.sustech.edu.cn/) in [SUSTech](https://sustech.edu.cn/en/), 
+YeeTone Wang is an undergraduate student at the Department of [CSE](http://cse.sustech.edu.cn/) in [SUSTech](https://sustech.edu.cn/en/), 
 whose supervisor is [Prof. Yepang LIU](https://yepangliu.github.io/).
 He is a member of [SUSTech Software Quality Lab(SQLab)](https://sqlab-sustech.github.io/index.html).
 His research is mainly focus on Software Engineering and Automated Testing.
