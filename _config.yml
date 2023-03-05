@@ -82,12 +82,9 @@ analytics:
 author:
   name             : "YeeTone WANG"
   avatar           : "profile.png"
-  bio              : "Your biography for the left-hand sidebar"
+  bio              : "To attain knowledge, add things every day. To attain wisdom, remove things every day. 為學日益，為道日損。"
   location         : "Shenzhen, China"
-  employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "http://yourfullgooglescholarurl.com"
-  email            :
+  email            : "yitongcool@foxmail.com"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
