@@ -13,4 +13,4 @@ This page shows representative awards since 2019.
 - SUSTech Outstanding Student Scholarship, 1st prize(2020, 2021, 2022)
 - SUSTech Zhixin Star Scholarship(2020, 2022)
 - China National Software Testing Competition, 2nd prize(2022)
-- SUSTech Top 10 Graduate Candidates(2023)
+- SUSTech Top 10 Undergraduate Graduates(2023)
